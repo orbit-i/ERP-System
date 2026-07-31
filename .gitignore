@@ -64,7 +64,7 @@ appsettings.Local.json
 secrets.json
 
 ############################################
-# EF Core generated files (if any)
+# EF Core generated files
 ############################################
 *.db
 *.db-shm
@@ -86,6 +86,11 @@ Desktop.ini
 *.cache
 
 ############################################
+# Backup folders
+############################################
+backups/
+
+############################################
 # Node (if frontend is added later)
 ############################################
 node_modules/
@@ -102,7 +107,7 @@ docker-compose.override.yml
 .publishsettings
 
 ############################################
-# GitHub Copilot / AI temporary files
+# AI Generated Files
 ############################################
 *.generated.cs
 
