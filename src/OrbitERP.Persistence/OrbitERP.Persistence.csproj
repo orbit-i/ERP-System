@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OrbitERP.Domain\OrbitERP.Domain.csproj" />
     <ProjectReference Include="..\OrbitERP.Shared\OrbitERP.Shared.csproj" />
+    <ProjectReference Include="..\OrbitERP.Application\OrbitERP.Application.csproj" />
   </ItemGroup>
 
 </Project>

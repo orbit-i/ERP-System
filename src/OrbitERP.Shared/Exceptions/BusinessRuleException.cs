@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace OrbitERP.Shared.Exceptions;
 
-namespace OrbitERP.Shared.Exceptions
+public class BusinessRuleException : Exception
 {
-    internal class BusinessRuleException
+    public BusinessRuleException(string message) 
+        : base(message)
     {
     }
 }

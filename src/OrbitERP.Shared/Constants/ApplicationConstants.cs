@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace OrbitERP.Shared.Constants;
 
-namespace OrbitERP.Shared.Constants
+public static class ApplicationConstants
 {
-    internal class ApplicationConstants
-    {
-    }
+    public const string DefaultDbConnection = "DefaultConnection";
+    public const string JwtSettingsSection = "JwtSettings";
 }
