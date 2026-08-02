@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OrbitERP.API/OrbitERP.API.csproj" Id="a37b2bbe-b08c-48f3-9a05-18874852ade5" />
+    <Project Path="src/OrbitERP.Application/OrbitERP.Application.csproj" Id="74dfdc4b-4a14-46fa-b758-be9ed106fd6f" />
+    <Project Path="src/OrbitERP.Domain/OrbitERP.Domain.csproj" Id="f3816dd2-5f93-4bac-8fd5-ac1d421bf2ab" />
+    <Project Path="src/OrbitERP.Infrastructure/OrbitERP.Infrastructure.csproj" Id="9bae6059-e48a-467b-9f82-4dcbff2ab731" />
+    <Project Path="src/OrbitERP.Persistence/OrbitERP.Persistence.csproj" Id="dab23370-e0a0-46bc-9eb6-a5d2dc17bc98" />
+    <Project Path="src/OrbitERP.Shared/OrbitERP.Shared.csproj" Id="61a429c0-5757-4f74-a41b-7e5aa8de1774" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OrbitERP.IntegrationTests/OrbitERP.IntegrationTests.csproj" Id="2aab45b8-59e1-4452-9c0f-1b4a734d295b" />
+    <Project Path="tests/OrbitERP.UnitTests/OrbitERP.UnitTests.csproj" Id="48296929-745d-4fb6-9b40-7b220912fd16" />
+  </Folder>
+</Solution>

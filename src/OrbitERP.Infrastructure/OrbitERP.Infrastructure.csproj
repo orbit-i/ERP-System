@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="3.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Caching\" />
+    <Folder Include="Email\" />
+    <Folder Include="External\" />
+    <Folder Include="Files\" />
+    <Folder Include="Identity\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrbitERP.Application\OrbitERP.Application.csproj" />
+    <ProjectReference Include="..\OrbitERP.Domain\OrbitERP.Domain.csproj" />
+    <ProjectReference Include="..\OrbitERP.Persistence\OrbitERP.Persistence.csproj" />
+    <ProjectReference Include="..\OrbitERP.Shared\OrbitERP.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
