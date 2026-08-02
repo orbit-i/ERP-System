@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OrbitERP.Application\OrbitERP.Application.csproj" />
     <ProjectReference Include="..\OrbitERP.Infrastructure\OrbitERP.Infrastructure.csproj" />
+    <ProjectReference Include="..\OrbitERP.Persistence\OrbitERP.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
