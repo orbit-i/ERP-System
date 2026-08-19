@@ -13,16 +13,27 @@ public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<Applicati
     {
         var apiPath = ResolveApiPath();
 
-        IConfigurationRoot configuration = new ConfigurationBuilder()
+        var builder = new ConfigurationBuilder()
             .SetBasePath(apiPath)
-            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-            .Build();
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+        try
+        {
+            var apiAssembly = System.Reflection.Assembly.Load("OrbitERP.API");
+            builder.AddUserSecrets(apiAssembly, optional: true);
+        }
+        catch
+        {
+            // Ignore if we can't load the API assembly for user secrets
+        }
+
+        IConfigurationRoot configuration = builder.Build();
 
         var connectionString = configuration.GetConnectionString("DefaultConnection");
 
         if (string.IsNullOrEmpty(connectionString))
         {
-            throw new InvalidOperationException("Could not find a connection string named 'DefaultConnection' in appsettings.json.");
+            throw new InvalidOperationException("Could not find a connection string named 'DefaultConnection' in appsettings.json or User Secrets.");
         }
 
         var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
